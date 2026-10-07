@@ -1,0 +1,39 @@
+<<<<<<< HEAD
+=======
+# Daily Report -- AGENTIC edition. Separate from the original project's
+# requirements.txt on purpose: the two projects are installed into separate
+# virtual environments and never share one.
+
+# ---- web API -------------------------------------------------------------
+>>>>>>> 8e557ed (Update Daily Report Agentic implementation)
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.5
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+<<<<<<< HEAD
+pyodbc==5.2.0
+XlsxWriter==3.2.0
+openpyxl==3.1.5
+httpx==0.28.1
+=======
+
+# ---- data access (read-only SQL Server) -----------------------------------
+pyodbc==5.2.0
+
+# ---- exports and the usage log -------------------------------------------
+XlsxWriter==3.2.0
+openpyxl==3.1.5
+
+# ---- LLM provider calls ---------------------------------------------------
+httpx==0.28.1
+
+# ---- agent orchestration --------------------------------------------------
+# The agent graph (planner -> tools -> writer -> verifier) is a LangGraph
+# StateGraph, the same library dynamic_db already uses for its own compile
+# graph, so one version serves both.
+langgraph==1.2.11
+
+# ---- tests ----------------------------------------------------------------
+>>>>>>> 8e557ed (Update Daily Report Agentic implementation)
+pytest==8.3.4

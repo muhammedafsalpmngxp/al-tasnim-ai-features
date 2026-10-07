@@ -1,0 +1,34 @@
+{
+  "name": "daily-morning-brief-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Al Tasnim Daily Morning Brief - operational dashboard",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+<<<<<<< HEAD
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+=======
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1"
+>>>>>>> 8e557ed (Update Daily Report Agentic implementation)
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^30.1.0",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.9"
+  }
+}

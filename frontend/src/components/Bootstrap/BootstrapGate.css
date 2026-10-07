@@ -1,0 +1,156 @@
+.bootstrap-gate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  padding: 24px;
+}
+
+.bootstrap-card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.bootstrap-card h1 {
+  margin: 0 0 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.bootstrap-checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.bootstrap-step {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.bootstrap-step--active {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.bootstrap-step--done {
+  color: var(--on-plan);
+}
+
+.bootstrap-step--failed {
+  color: var(--danger);
+}
+
+.bootstrap-step--skipped {
+  color: var(--text-dim);
+}
+
+.bootstrap-step__glyph {
+  width: 1.2em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.bootstrap-step--active .bootstrap-step__glyph {
+  color: var(--accent);
+  animation: bootstrap-spin 1s linear infinite;
+  display: inline-block;
+}
+
+.bootstrap-step__label {
+  flex: 1;
+}
+
+.bootstrap-step__duration {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-dim);
+  font-size: 0.82em;
+}
+
+.bootstrap-step__detail {
+  color: var(--text-dim);
+  font-size: 0.82em;
+  max-width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bootstrap-note {
+  margin-top: 16px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.bootstrap-poll-error {
+  color: var(--below-plan);
+  font-size: 0.88rem;
+  margin-bottom: 16px;
+}
+
+.bootstrap-failure h2 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--danger);
+}
+
+.bootstrap-failure__summary {
+  color: var(--text);
+  margin: 0 0 16px;
+}
+
+.bootstrap-failure__meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  margin: 0 0 16px;
+  font-size: 0.86rem;
+}
+
+.bootstrap-failure__meta dt {
+  color: var(--text-dim);
+}
+
+.bootstrap-failure__meta dd {
+  margin: 0;
+  color: var(--text);
+  word-break: break-all;
+}
+
+.bootstrap-failure__log-pointer {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.bootstrap-failure__log-pointer code {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.95em;
+}
+
+@keyframes bootstrap-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

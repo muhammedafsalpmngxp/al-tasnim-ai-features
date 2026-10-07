@@ -1,0 +1,13 @@
+[project]
+name = "dynamic-db"
+version = "1.0.0"
+description = "Schema-adaptive SQL compilation engine: introspection, fingerprinting, capability compilation and verification, independent of any application built on it."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "database: test requires a reachable SQL Server",
+]
+addopts = "-q"
